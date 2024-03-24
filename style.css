@@ -1,0 +1,91 @@
+#outputText {
+    position: relative;
+}
+
+#outputText::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Muñeco.png'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Asegura que la imagen esté detrás del texto */
+}
+
+
+
+.main-title{
+    font-size: 36px;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#F3F5FC;;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px; /* Ancho deseado */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; /* Esto asegura que el padding se incluya en el ancho */
+}
+
+
+.button-container {
+    text-align: center; /* Centra los botones horizontalmente */
+}
+
+button {
+    display: inline-block;
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para pantallas medianas y pequeñas */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Reducir el ancho del contenedor para pantallas medianas */
+    }
+
+    textarea {
+        min-height: 100px; /* Reducir la altura del textarea para pantallas medianas */
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Mostrar los botones en columna para pantallas medianas */
+    }
+
+    button {
+        width: 100%; /* Hacer que los botones ocupen todo el ancho para pantallas medianas */
+    }
+}

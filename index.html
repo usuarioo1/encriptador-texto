@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+
+    <h1 class="main-title">Encriptador de Texto</h1>
+
+    <div class="container">
+
+        <textarea id="inputText" placeholder="Ingresa texto para cifrar aquí"></textarea>
+        <div class="button-container">
+            <button onclick="encrypt()">Cifrar</button>
+            <button onclick="decrypt()">Descifrar</button>
+        </div>
+
+        
+        <div class="output-container">
+            <textarea id="outputText" placeholder="Texto encriptado o desencriptado"></textarea>
+            <button>Copiar</button>
+            <img id="placeholderImage" src="/assets/Muñeco.png" alt="Imagen de relleno">
+        </div>
+
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
