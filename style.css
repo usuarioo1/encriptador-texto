@@ -68,6 +68,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+#placeholderImage{
+    margin: auto;
+}
+
 
 /* Estilos para pantallas medianas y pequeñas */
 @media only screen and (max-width: 768px) {
