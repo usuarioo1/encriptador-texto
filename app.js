@@ -30,6 +30,14 @@ function decrypt() {
     }
 }
 
+function copyToClipboard() {
+    let outputText = document.getElementById('outputText');
+    outputText.select();
+    document.execCommand('copy');
+    alert('Texto copiado al portapapeles');
+}
+
+
 //datos de encriptdo
 
 // La lógica de encriptación y desencriptación se maneja en el archivo JavaScript. En este ejemplo, se utiliza un método muy simple de cifrado César, donde cada carácter se desplaza un lugar en el alfabeto (a se convierte en b, b se convierte en c, etc.) para encriptar y viceversa para desencriptar. Este es solo un ejemplo básico, y no debe utilizarse para fines de seguridad real, ya que es muy vulnerable a ataques de fuerza bruta. Para aplicaciones reales, es mejor utilizar algoritmos de encriptación más robustos y probados.
