@@ -21,3 +21,9 @@ Link:
 ## Contact
 
 nicolasgonzalezmoller@gmail.com
+
+## Tech
+-HTML
+-CSS
+-JAVASCRIPT
+
